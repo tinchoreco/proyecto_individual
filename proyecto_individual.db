@@ -1,0 +1,45 @@
+
+CREATE DATABASE proyecto_individual;
+USE proyecto_individual;
+
+	/*creacion de tablas */
+
+drop table if exists "sucursal";
+
+create table "sucursal" (
+	"Id" VARCHAR(300),
+	"comercioID" VARCHAR(300),
+	"banderaID" VARCHAR(300),
+	"banderaDescripcion" VARCHAR(300),
+	"comercioRazonSocial" VARCHAR(300),
+	"provincia" VARCHAR(300),
+	"localidad" VARCHAR(300),
+	"direccion" VARCHAR(300),
+	"latitud" VARCHAR(300),
+	"longitud" VARCHAR(300),
+	"sucursalNombre" VARCHAR(300),
+	"sucurlasTipo" VARCHAR(300)
+	);
+
+
+DROP TABLE IF EXISTS "producto";
+CREATE TABLE "producto" (
+	"id" VARCHAR(300),
+	"marca" VARCHAR(300),
+	"nombre" VARCHAR(300),
+	"presentacion" VARCHAR(300),
+	"categoria1" VARCHAR(300),
+	"categoria2" VARCHAR(300),
+	"categoria3" VARCHAR(300)
+	); 
+
+DROP TABLE IF EXISTS "precio" ;
+CREATE TABLE "precio" (
+	"precio" VARCHAR(300),
+	"producto_id" VARCHAR(300),
+	"sucursal_id" VARCHAR(300)
+	);
+	
+
+
+
